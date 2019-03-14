@@ -42,7 +42,7 @@ android {
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion "android-Q"
+        targetSdkVersion "Q"
     }
 
     compileOptions {
