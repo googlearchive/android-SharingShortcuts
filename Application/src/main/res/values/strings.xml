@@ -17,7 +17,7 @@
 
     <!-- MainActivity -->
 
-    <string name="send_intent_title">Send a message via:</string>
+    <string name="send_intent_title">Send message</string>
     <string name="explanation">
         This app demonstrates how to implement Direct Share. Use some other app and share a text.
         For your convenience, you can also use the input below to share the text.

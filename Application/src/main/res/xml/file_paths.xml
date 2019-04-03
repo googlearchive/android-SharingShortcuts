@@ -13,9 +13,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
-    <share-target android:targetClass="com.example.android.sharingshortcuts.SendMessageActivity">
-        <data android:mimeType="text/plain" />
-        <category android:name="com.example.android.sharingshortcuts.category.TEXT_SHARE_TARGET" />
-    </share-target>
-</shortcuts>
+<paths>
+    <cache-path
+        name="shared_images"
+        path="images/" />
+</paths>

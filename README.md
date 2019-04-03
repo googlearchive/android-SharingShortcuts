@@ -38,15 +38,23 @@ sharetarget library and in your AndroidManifest.xml, add a meta-data tag in your
 receives the Intent. Specify android:name as android.service.chooser.chooser_target_service and
 android:value as androidx.sharetarget.ChooserTargetServiceCompat.
 
+The way to share text has also changed. Before, you could specify a title in the
+[Intent.createChooser()][5] method itself. That is deprecated and unused in Android Q. You can achieve
+the same behavior by adding an Intent.EXTRA_TITLE extra to the intent. Similarly, if you want a
+preview thumbnail to appear, you can create a content URI and set a ClipData object in the intent.
+You can see how to do that in our example, open the MainActivity.java file for more details.
+
 [1]: https://developer.android.com/about/versions/marshmallow/android-6.0#direct-share
 [2]: https://developer.android.com/guide/topics/ui/shortcuts/creating-shortcuts
 [3]: https://developer.android.com/reference/androidx/core/content/pm/ShortcutManagerCompat.html
 [4]: https://developer.android.com/reference/androidx/core/content/pm/ShortcutInfoCompat.Builder.html
+[5]: https://developer.android.com/reference/android/content/Intent.html#createChooser(android.content.Intent,%20java.lang.CharSequence)
 
 Pre-requisites
 --------------
 
-- Android SDK android-Q
+- Android SDK 28
+- Android Build Tools v28.0.3
 - Android Support Repository
 
 Screenshots
@@ -63,6 +71,7 @@ This sample uses the Gradle build system. To build this project, use the
 Support
 -------
 
+- Google+ Community: https://plus.google.com/communities/105153134372062985968
 - Stack Overflow: http://stackoverflow.com/questions/tagged/android
 
 If you've found an error in this sample, please file an issue:
